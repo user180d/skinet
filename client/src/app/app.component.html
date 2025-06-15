@@ -1,11 +1,5 @@
 <app-header></app-header>
 
-<div class="test-style">
-  <h2 class="text-3xl font-bold underline">Welcome to {{ title }}</h2>
-  <ul>
-    <!-- @for (product of products; track product.id) {
-            <li>{{product.name}}</li>
-        } -->
-    <li *ngFor="let product of products" class="text-lg">{{ product.name }}</li>
-  </ul>
+<div class="container">
+  <app-shop></app-shop>
 </div>

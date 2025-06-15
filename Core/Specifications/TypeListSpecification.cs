@@ -7,7 +7,7 @@ public class TypeListSpecification : BaseSpecification<Product, string>
 {
     public TypeListSpecification()
     {
-        AddSelect(x => x.Brand);
+        AddSelect(x => x.Type);
         ApplyDistinct();
     }
 }
