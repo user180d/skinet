@@ -60,7 +60,7 @@ export class ProductDetailsComponent implements OnInit {
       this.quantityInCart+=itemsToAdd;
       this.cartService.addItemToCart(this.product,itemsToAdd);
     } else{
-      const itemsToRemove = this.quantity - this.quantityInCart;
+      const itemsToRemove = this.quantityInCart - this.quantity;
       this.quantityInCart-=itemsToRemove;
       this.cartService.removeItemFromCart(this.product.id,itemsToRemove);
     }
